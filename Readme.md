@@ -1,3 +1,3 @@
 # Smart-Contract-Parctice
 
-* 01 - 練習ERC20發幣合約
+* 01 - 練習基本ERC20合約
