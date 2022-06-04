@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.14;
 
 contract Token {
@@ -68,6 +69,14 @@ contract Token {
 	    emit Approval(msg.sender,_spender,_value);
 
         return true;
+    }
+
+    // 造幣
+    function mint(address _to,uint value) public {
+        
+        balanceOf[msg.sender] = value;
+        totalSupply += value;
+        emit Transfer(address(0),_to,value);
     }
     
 
